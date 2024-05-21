@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>User Authentication</title>
+ <style>
+ body
+ {
+ text-align: center;
+ background-color: slateblue;
+ color: white;
+ font-family: Arial, sans-serif;
+ }
+ form
+ {
+ width: 300px;
+ margin: 0 auto;
+ }
+ input
+ {
+ width: 100%;
+ padding: 10px;
+ margin-bottom: 10px;
+ border: 1px solid lightgray;
+ border-radius: 5px;
+ } input[type="submit"]
+ {
+ background-color: green;
+ color: white;
+ border: none;
+ padding: 10px 20px;
+ border-radius: 5px;
+ cursor: pointer;
+ }
+ p
+ {
+ font-size: 14px;
+ margin-top: 10px;
+ }
+ a
+ {
+ color: gold;
+ text-decoration: none;
+ }
+ </style>
+</head>
+<body>
+ <h2>Login</h2>
+ <form action="LoginController" method="post">
+ <input type="text" name="username" placeholder="Enter your username">
+ <br>
+ <input type="password" name="password" placeholder="Enter your password">
+ <br>
+ <input type="submit" value="Login">
+ </form>
+ <p>Don't have an account? <a href="registration.html">Register here</a>.</p>
+ <img src="bmi.jpeg">
+</body></html>
