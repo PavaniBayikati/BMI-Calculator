@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>BMI Calculator</title>
+ <style>
+ body
+ {
+ text-align: center;
+ font-family: Arial, sans-serif;
+ background-color: rgb(128, 255, 128) }
+ h2
+ {
+ color: darkslategray;
+ }
+ form
+ {
+ margin: 0 auto;
+ max-width: 300px;
+ }
+ input[type="text"],
+ input[type="submit"]
+ {
+ width: 100%;
+ padding: 10px;
+ margin-bottom: 10px;
+ border: 1px solid lightgray;
+ border-radius: 5px;
+ }
+ input[type="submit"]
+ {
+ background-color: dodgerblue;
+ color: white;
+ border: none;
+ cursor: pointer;
+ }
+ input[type="submit"]:hover
+ {
+ background-color: royalblue;
+ }
+ </style>
+</head>
+<body>
+ <h2>BMI Calculator</h2>
+ <form action="BMICalculationController" method="post">
+ Enter your height in centimeters: <input type="text" name="height_cm"><br>
+ Enter your weight in kilograms: <input type="text" name="weight_kg"><br>
+ <input type="submit" value="Calculate BMI">
+ </form>
+</body>
+</html>
